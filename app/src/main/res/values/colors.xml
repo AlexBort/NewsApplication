@@ -6,6 +6,6 @@
 
 
     <color name="black">#000000</color>
-    <color name="tab_layout">@color/black</color>
+    <color name="tab_layout">@color/colorPrimary</color>
 
 </resources>
