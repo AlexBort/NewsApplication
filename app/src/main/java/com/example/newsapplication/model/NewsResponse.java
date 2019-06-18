@@ -1,10 +1,12 @@
 package com.example.newsapplication.model;
 
+import java.util.List;
+
 public class NewsResponse {
 
     private String next;
     private String previous;
-    private Results results;
+    private List<Results> results;
 
     @Override
     public String toString() {
@@ -31,11 +33,13 @@ public class NewsResponse {
         this.previous = previous;
     }
 
-    public Results getResults() {
+    public List<Results> getResults() {
         return results;
     }
 
-    public void setResults(Results results) {
+    public void setResults(List<Results> results) {
         this.results = results;
     }
+
+
 }

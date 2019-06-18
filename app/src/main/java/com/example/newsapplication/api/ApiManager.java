@@ -52,6 +52,7 @@ public class ApiManager {
 
             @Override
             public void onFailure(Call<NewsResponse> call, Throwable t) {
+                t.getMessage();
                 listener.failureResponse();
             }
         });
