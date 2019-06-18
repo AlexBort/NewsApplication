@@ -14,20 +14,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ApiManager apiManager = new ApiManager();
-        apiManager.getNews(new ResponseListener() {
-            @Override
-            public void successResponse(NewsResponse response) {
-
-                response.toString();
-
-            }
-
-            @Override
-            public void failureResponse() {
-
-            }
-        });
+//        ApiManager apiManager = new ApiManager();
+//        apiManager.getNews(new ResponseListener() {
+//            @Override
+//            public void successResponse(NewsResponse response) {
+//                response.toString();
+//            }
+//
+//            @Override
+//            public void failureResponse() {
+//
+//            }
+//        });
 
     }
 }
