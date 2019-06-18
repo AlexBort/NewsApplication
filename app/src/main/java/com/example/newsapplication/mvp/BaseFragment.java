@@ -16,11 +16,25 @@ public abstract class BaseFragment<T extends BasePresenter> extends Fragment imp
 
     protected abstract int getLayoutId();
 
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        presenter.onUnbindView();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        presenter.onBindView(this);
+    }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         presenter = createPresenter();
     }
+
 
     @Nullable
     @Override
